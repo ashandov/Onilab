@@ -1,0 +1,295 @@
+@import _vars
+@import _fonts
+@import _libs
+
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-size: 16px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+
+.container
+	position: absolute
+	width: 100%
+	height: 100%
+	background: #FFFFFF
+	
+.header
+	position: fixed
+	background-color: #FFF
+	width: 100%
+	display: flex
+	flex-direction: row
+	box-shadow: 0px 3px 4px rgba(133, 133, 133, 0.5);
+	height: 60px
+	z-index: 100
+	&:hover 
+		box-shadow: 0 0 0 9999px rgba(0,0,0, 0.3)
+	&__logo
+		transform: scale(0.75)
+		
+		padding: 25px  0px 25px 0px
+		align-self: center
+		justify-self: left
+		
+		
+	&__nav
+		font-size: 0.85rem
+		text-transform: uppercase
+		align-content: center
+		align-self: center
+		justify-self: flex-end
+		justify-content: flex-end
+		margin: 0 20px 0 auto
+		&>nav>ul
+			position: relative
+			list-style-type: none
+			display: inline-flex
+			
+			&>li
+				margin: 42px 20px  0 0  
+				a
+					display: block
+					height: 3rem
+					padding-bottom: 42px
+					img 
+						margin: 0 5px 0 10px
+				&:hover 
+					.header__services-menu
+						display: flex
+						z-index: 1
+					ul
+						flex-direction: column
+						flex: 0
+						a:hover a
+							background-color: $accent
+							
+
+	&__button
+		text-transform: uppercase
+		color:#ffffff
+		background:#505AD5
+		text-decoration: none
+		padding: 5px 15px 
+		border-radius: 2px
+		position: relative
+		margin-left: 20px
+		
+		&:hover
+			text-decoration: none
+			color:#ffffff
+			background-color: darken($accent,3)
+		
+		
+	&__services-menu
+		display: none
+		font-size: 0.8rem
+		text-decoration: none
+		position: absolute
+		left: 100px
+		top: 82px
+		margin: 0px 0px 0px 0px
+
+		ul
+			list-style-type: none
+		
+			li
+				border-bottom: 1px solid #BEC4D2
+				z-index: 1
+				background-color: #fff
+				min-width: 320px
+				
+
+				text-align: left
+				a
+					display: flex
+					color: $text
+					padding: 10px
+					min-width: 120px
+					text-transform: none
+					img
+						margin-right: 15px
+				&:hover 
+					a
+						text-decoration: none
+						background-color: $accent
+						color:#fff
+					li
+						border: none
+					img
+						color: #fff
+.main-screen
+	
+	display: flex
+	flex-direction: column
+	position: relative
+	top: calc(100% + 55px)
+	margin-bottom: 50px
+	width: 100%
+	height: 550px
+	background-image: url(../img/_src/BG_main.png)
+
+	&__dots-top
+	 	height: 188px
+	 	width: 24%
+	 	background-image: url(../img/_src/Combined_Shape.png)
+	 	mix-blend-mode: normal
+
+	&__dots-bottom
+		position: absolute
+		bottom: 20%
+		right: 0px
+		height: 188px
+		width: 50%
+		background-image: url(../img/_src/Combined_Shape.png)
+		mix-blend-mode: normal
+	&__content
+		display: flex
+		flex: 1 1 1
+		flex-direction: column
+		justify-content: space-between
+		position: absolute
+		top: 20%
+		left: 12%
+		width: 40%		
+		height: 525px
+	&__text		
+		color: #fff	
+		span
+			display: flex
+			font-size: 56px
+			font-weight: 900
+			line-height: 1.2
+			height: 155px
+			font-family: $bold-font
+			margin-bottom: 30px
+			
+		p
+			display: flex
+			font-size: 25px
+			line-height: 1.4
+			height: 155px
+			
+			
+	&__stat
+			width: 100%
+			height: 175px
+			background-color: #fff
+			border-radius: 5px
+			color: black
+			text-align: center
+			font-weight: 300
+			p
+				font-family: $light-font
+				margin-top: 20px
+				font-size: 1.3rem
+				font-weight: 50
+
+			.counter
+				width: 100%
+				height: calc( 100% - 42px )
+				display: flex
+				align-items: center
+				justify-content: space-around
+				box-shadow: 0px 3px 4px rgba(133, 133, 133, 0.5)
+				.time
+					font-weight: 600
+					display: flex
+					flex-direction: column
+					align-items: center
+					justify-content: center
+					height: 75%
+					width: 17%
+					border: 5px solid lighten($light-grey,5)
+					border-radius: 50%
+					p
+						font-family: $light-font
+						text-transform: uppercase
+						margin: 0
+						font-size: 10px
+						color: darken($light-grey,25 )
+						letter-spacing: 0.2em
+		
+	&__form
+		display: flex
+		align-items: center
+		flex-direction: column
+		height: 600px
+		width: 33%
+		justify-content: space-around
+		position: absolute
+		background-color: #fff
+		padding: 4%
+		top: 20%
+		left: 60%
+		border-radius: 5px
+		box-shadow: 0px 3px 4px rgba(133, 133, 133, 0.5)
+		
+		img	
+		p
+			font-family: $bold-font
+			font-size: 1.4rem
+			font-weight: 700
+			
+		input
+			margin-top: 10px
+			width: 100%
+			height: 100%
+			border: 1px solid #d9d9d9
+			border-radius: 5px 
+			outline: none
+			padding-left: 25px
+			&::-webkit-input-placeholder 
+				 color: $grey
+				 font-family: $default-font
+				
+				 
+		.send
+			background-color: $accent
+			color: #ffffff
+			text-transform: uppercase
+			&:hover
+				background-color: darken($accent,3)
+
+			
+		span 
+			color: $grey
+			margin-top: 20px
+
+
+
+
+			
+			
+		
+
+
+
+
+
+
+					
+					
+					
+				
+
+	
+	
+	
