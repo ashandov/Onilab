@@ -115,8 +115,6 @@ body
 				z-index: 1
 				background-color: #fff
 				min-width: 320px
-				
-
 				text-align: left
 				a
 					display: flex
@@ -126,6 +124,8 @@ body
 					text-transform: none
 					img
 						margin-right: 15px
+				&:hover
+
 				&:hover 
 					a
 						text-decoration: none
@@ -135,6 +135,8 @@ body
 						border: none
 					img
 						color: #fff
+	&__underline
+		margin-top: -35px
 .main-screen
 	
 	display: flex
@@ -143,8 +145,19 @@ body
 	top: calc(100% + 55px)
 	margin-bottom: 50px
 	width: 100%
-	height: 550px
+	height: 750px
 	background-image: url(../img/_src/BG_main.png)
+	background-size: 100% 80%
+	background-repeat: no-repeat
+	
+	
+	&__background
+		height: 80%
+		width: 100%
+		display: flex
+		background-image: url(../img/_src/BG_main.png)
+		
+		
 
 	&__dots-top
 	 	height: 188px
@@ -272,6 +285,15 @@ body
 		span 
 			color: $grey
 			margin-top: 20px
+.stat
+	position: relative
+	top: calc(100%(100% + 55px))
+	margin-top: 150px
+	width: 100%
+	height: 550px
+	&__head
+		display: none
+			
 
 
 
