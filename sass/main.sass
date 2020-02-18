@@ -116,7 +116,7 @@ body
 		text-decoration: none
 		position: absolute
 		left: 100px
-		top: 66px
+		top: 65px
 		margin: 0px 0px 0px 0px
 
 		ul
@@ -149,17 +149,8 @@ body
 						svg
 							fill: #fFF							
 					svg 
-						fill: #1bceb1
-						animation-name: change_fill
-						animation-duration: 3s
-	@keyframes change_fill
-		0%
-			fill: #49549E
-		75%
-			fill: #1bceb1
-		100% 
-			fill: #1bce4f
-							
+						fill: #fff
+						
 												
 	&__underline
 		margin-top: -35px
@@ -435,6 +426,9 @@ body
 			position: relative
 			bottom: 23%
 			right: 8%
+			img:hover 
+				transform: rotate(-10deg) scale(0.8)
+				
 
 		.block
 			font-size: 1.3rem
@@ -447,11 +441,13 @@ body
 			background: #FFF
 			box-shadow: 0px 13px 27px rgba(50, 50, 93, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.03), 6px -6px 16px rgba(0, 0, 0, 0.05)
 			border-radius: 8px
-			padding: 20px 75px
+			padding: 25px 75px
 			bottom: 65%
 			left: 10%
+			&:hover .polygon
+				transform: rotate(30)
 			.text
-				width: 100%
+				width: 95%
 				display: flex
 				flex-direction: row
 				p
@@ -467,43 +463,73 @@ body
 					padding-left: 10px
 					display: flex
 					flex-direction: column
+					width: 100%
 					span
 						font-family: $bold-font
 						font-weight: 900
+						margin-top: 4%
 					p
 						position: relative
 						font-size: 1rem
-						bottom: 30%
-						width: 105%
+						bottom: 25%
+						width: 150%
+
 				.linkedin		
-					padding-left: 60%				
+					position: relative
+					bottom: 10px
+					margin: 0 0 0% 60%	
+					height: 70%
+					width: 30%			
 					display: flex
 					flex-direction: row
-					justify-self: flex-end
+					justify-content: center
+					align-content: center
 					font-family: $bold-font
 					font-size: 2.5rem
 					
-					
 					a	
-						display: flex
-						flex-direction: row
-						flex-wrap: wrap
-						justify-content: center
-						margin-bottom: 0px
-						height: 60%
-						width: 85%
-						color: black
-						border-radius: 4px
-						line-height: 0.5
+						width: 100%
+						
+						
+					
 						&:hover
-							text-decoration: none
+							a
+							background:#505AD5
+							border-radius: 8px 
+							height: 95%
+				
+							&:after
+								display: none
+								
+							svg
+								fill: #ffffff
+								position: relative
+								top: 10px
+							
+								
+	
+
+						
+						svg
+							padding-left: 10px
+							width: 80%
+							transform: scale(1.1)
+							
+
+						
 						&:after
+							position: relative
+							rigth: 10px
 							content: ""
 							display: flex
+							padding-rigpx
 							height: 13%
-							width: 120%
+							width: 100%
 							background-color: #505AD5
 							border-radius: 4px
+							&:hover
+								background: #505AD5
+								
 						
 		
 				
