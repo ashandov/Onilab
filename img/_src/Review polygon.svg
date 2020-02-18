@@ -1,0 +1,9 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="Polygon Copy 4" fill-rule="evenodd" clip-rule="evenodd" d="M353.437 67.8433L398.973 237.75C401.757 248.135 398.788 259.215 391.187 266.817L266.817 391.187C259.215 398.788 248.135 401.757 237.75 398.973L67.8433 353.437C57.4585 350.653 49.3467 342.542 46.5635 332.157L1.02657 162.25C-1.75666 151.865 1.21154 140.785 8.81307 133.183L133.183 8.81307C140.785 1.21154 151.865 -1.75666 162.25 1.02657L332.157 46.5635C342.542 49.3467 350.653 57.4585 353.437 67.8433Z" fill="url(#paint0_linear)"/>
+<defs>
+<linearGradient id="paint0_linear" x1="468.321" y1="-51.8038" x2="-47.6475" y2="-108.029" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF88BE"/>
+<stop offset="1" stop-color="#1A54AE"/>
+</linearGradient>
+</defs>
+</svg>
