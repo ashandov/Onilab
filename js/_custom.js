@@ -71,7 +71,7 @@ function time() {
 		var progress = length / ( self.BASE_LENGTH[type] * multi );
 		var dashoffset = self.CIRCUMFERENCE * (1 - progress);
 
-		element.querySelector('.circular-timer__item-value').textContent = Math.floor(length / multi);
+		element.querySelector('.circular-timer__item .value').textContent = Math.floor(length / multi);
 		element.querySelector('.progress').style.strokeDashoffset = dashoffset;
 	};
 
@@ -111,7 +111,10 @@ function time() {
 
 	};
 
-	var introTimer = new CircularTimer( document.querySelector('.bloc') );
-	CircularTimer( document.querySelector('.bloc') );
+	var introTimer = new CircularTimer( document.querySelector('.circular-timer') );
+
+	
+	
+	
 
 

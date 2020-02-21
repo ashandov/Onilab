@@ -599,13 +599,146 @@ body
 								
 						
 		
-				
-			
+@media (max-width: 1024px ),(max-width: 768px)
+	.header
+		position: fixed
+		background-color: #FFF
+		width: 100%
+		display: flex
+		flex-direction: row
+		box-shadow: 0px 3px 4px rgba(133, 133, 133, 0.5)
+		height: 60px
 
-
+		&__logo
+			position: relative
+			right: 10%
+			width: 100%
+			display: flex
+			transform: scale(0.75)
+			justify-self: center
 		
-			
+			&:after
+				width: 50%
+				transform: scale(1.4)
+				display: flex
+				justify-self: flex-end
+				position: relative
+				left: 115%
+				align-self: center
+				content: url(../img/_src/Burger.svg)
+				&:hover 
+					display: none
+					.header__nav
+						display: inline-flex
 
+
+					
+
+		&__nav
+			display: none
+			font-size: 0.85rem
+			text-transform: uppercase
+			align-content: center
+			align-self: center
+			margin: 0 20px 0 auto
+			&>nav>ul
+				position: relative
+				list-style-type: none
+				display: inline
+
+				&>li
+					margin: 20px 20px  0 0
+
+					a
+						display: block
+						height: 3rem
+						img 
+							margin: 0 5px 0 10px
+						embed 
+							margin: 0 5px 0 10px
+					&:nth-child(2):hover
+						&:after
+							display: none
+					&:hover 
+						&:after
+							content: ""
+							display: flex
+							height: 2.5px
+							width: 100%
+							background-image: $gardient
+							border-radius: 3px
+
+						.header__services-menu
+							display: flex
+							z-index: 1
+						ul
+							flex-direction: column
+							flex: 0
+							a:hover a
+								background-color: $accent
+
+
+		&__button
+			display: none
+			text-transform: uppercase
+			color:#ffffff
+			background:#505AD5
+			text-decoration: none
+			padding: 5px 15px 
+			border-radius: 2px
+			position: relative
+			margin-left: 20px
+
+			&:hover
+				text-decoration: none
+				color:#ffffff
+				background-color: darken($accent,3)
+
+
+		&__services-menu
+			display: none
+			font-size: 0.8rem
+			text-decoration: none
+			position: absolute
+			left: 100px
+			top: 65px
+			margin: 0px 0px 0px 0px
+
+			ul
+				list-style-type: none
+
+				li
+					border-bottom: 1px solid #BEC4D2
+					z-index: 1
+					background-color: #fff
+					min-width: 320px
+					text-align: left
+					a
+						display: flex
+						color: $text
+						padding: 10px
+						min-width: 120px
+						text-transform: none
+						img
+							margin-right: 15px
+					&:hover
+
+					&:hover 
+						a
+							text-decoration: none
+							background-color: $accent
+							color:#fff
+						li
+							border: none
+						embed
+							svg
+								fill: #fFF							
+						svg 
+							fill: #fff
+
+
+		&__underline
+			margin-top: -35px
 
 
 
